@@ -10,6 +10,14 @@ provider "null" {
   # Configuration options
 }
 
+variable "myvar" {
+  value = "default value"
+}
+
+output "myvar_output" {
+  value = var.myvar
+}
+
 
 resource "null_resource" "test" {
   count = 11
