@@ -11,7 +11,6 @@ provider "null" {
 }
 
 variable "myvar" {
-  default = "default value"
 }
 
 output "myvar_output" {
