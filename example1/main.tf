@@ -5,6 +5,7 @@ terraform {
     }
   }
 }
+# example 1 directory
 
 provider "null" {
   # Configuration options
@@ -19,7 +20,7 @@ output "myvar_output" {
 
 
 resource "null_resource" "test" {
-  count = 8
+  count = 1
 
   provisioner "local-exec" {
     command = "echo ${count.index}"
