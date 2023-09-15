@@ -19,7 +19,7 @@ output "myvar_output" {
 
 
 resource "null_resource" "test" {
-  count = 1
+  count = 2
 
   provisioner "local-exec" {
     command = "echo ${count.index}"
