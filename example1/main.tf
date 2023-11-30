@@ -1,7 +1,13 @@
 terraform {
+  cloud {
+    hostname     = "app.terraform.io"
+    organization = "sean-env"
+
+    workspaces = "null_resources"
+  }
   required_providers {
     null = {
-      source  = "hashicorp/null"
+      source = "hashicorp/null"
     }
   }
 }
