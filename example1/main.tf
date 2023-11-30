@@ -3,7 +3,9 @@ terraform {
     hostname     = "app.terraform.io"
     organization = "sean-env"
 
-    workspaces = "null_resources"
+    workspaces {
+      name = "null_resources"
+    }
   }
   required_providers {
     null = {
